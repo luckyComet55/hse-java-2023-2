@@ -8,10 +8,11 @@ public class Task2 {
   
   public static void main (String[] args) {
     Scanner scan = new Scanner(System.in);
-    System.out.println("Enter absolute path to file to be read and then the one to be wrote at:");
     String filenameIn, filenameOut;
     try {
+      System.out.println("Enter absolute path to file to read:");
       filenameIn = scan.nextLine();
+      System.out.println("Enter absolute path to file to write:");
       filenameOut = scan.nextLine();
     } catch (NoSuchElementException | IllegalStateException exception) {
       System.out.println("Something went wrong while reading line");
